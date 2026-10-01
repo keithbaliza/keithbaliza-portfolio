@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keith Baliza | AI Automation, Web Developer, Virtual Assistant</title>
+  <meta name="description" content="Portfolio of Keith Baliza: AI automation with n8n, web development, and virtual assistant work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Boot screen -->
+  <div id="boot" aria-hidden="true">
+    <p class="boot-text">BOOTING PORTFOLIO<span class="blink">_</span></p>
+    <div class="boot-bar"><span id="bootBar"></span></div>
+    <p id="bootPct" class="boot-pct">0%</p>
+  </div>
+
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Header + lamp -->
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Keith Baliza, home">KB<span class="blink">_</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="lamp" class="lamp" aria-label="Switch between dark and light mode" aria-pressed="false" title="Click the lamp">
+      <svg viewBox="0 0 16 20" shape-rendering="crispEdges" aria-hidden="true">
+        <rect class="cord" x="8" y="0" width="1" height="5" />
+        <rect class="shade" x="6" y="5" width="5" height="1" />
+        <rect class="shade" x="5" y="6" width="7" height="1" />
+        <rect class="shade" x="4" y="7" width="9" height="1" />
+        <rect class="shade" x="3" y="8" width="11" height="1" />
+        <rect class="shade" x="2" y="9" width="13" height="2" />
+        <rect class="bulb" x="6" y="11" width="5" height="2" />
+        <rect class="bulb" x="7" y="13" width="3" height="1" />
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="hello">Hi, I'm</p>
+        <h1 class="glitch" data-text="KEITH BALIZA">KEITH BALIZA</h1>
+        <p class="role"><span id="typed"></span><span class="blink">█</span></p>
+        <p class="lead">I build AI-powered solutions that help businesses automate tasks, streamline workflows, improve efficiency, and enhance customer experiences—while keeping people in control of important decisions.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/keith-baliza-a579a427b/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Profile summary">
+        <div class="term-bar"><i></i><i></i><i></i><span>keith.profile</span></div>
+        <pre id="term" class="term-body"></pre>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Highlights">
+      <div><b data-count="3">0</b><span>AI automations built</span></div>
+      <div><b data-count="2">0</b><span>web apps shipped</span></div>
+      <div><b data-count="4">0</b><span>months at Accenture OJT</span></div>
+      <div><b class="static">Cum Laude</b><span>BS Information Technology</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div class="avatar-wrap">
+          <img src="assets/profile.jpg" alt="Photo of Keith Baliza" class="avatar" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar ph',textContent:'ADD PHOTO\nassets/profile.jpg'}))" />
+        </div>
+        <div class="about-text">
+          <p>I'm an Information Technology graduate (Cum Laude) from STI College Global City, based in Taguig City, Philippines.</p>
+          <p>Today, I help businesses streamline their operations by combining technology, AI, and automation to reduce repetitive work, improve efficiency, and simplify everyday processes. From automating workflows and organizing information to supporting customer interactions and business operations, I build practical solutions tailored to each business's needs—while keeping people in control of important decisions.</p>
+          <div class="skills">
+            <div class="skill-group"><h3>AI &amp; Automation</h3><p><span>n8n</span><span>OpenAI</span><span>RAG</span><span>Webhooks</span><span>HTTP Requests</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span></p></div>
+            <div class="skill-group"><h3>Virtual Assistance</h3><p><span>Gmail</span><span>Google Calendar</span><span>Google Sheets</span><span>Google Docs</span><span>Google Forms</span><span>Data Entry</span><span>Scheduling</span></p></div>
+            <div class="skill-group"><h3>Development</h3><p><span>JavaScript</span><span>PHP</span><span>Java</span><span>Python</span><span>C#</span><span>SAP ABAP</span><span>MySQL</span><span>Supabase</span><span>Git</span></p></div>
+            <div class="skill-group"><h3>Creative</h3><p><span>Canva</span><span>CapCut</span><span>Figma</span><span>Short-form video</span><span>Unity</span><span>Blender</span></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <div class="resume-grid">
+        <div class="panel">
+          <h3>Experience</h3>
+          <div class="tl">
+            <div class="tl-item">
+              <p class="tl-date">Feb 2026 - Jun 2026 | Remote</p>
+              <h4>SAP ABAP Developer Trainee</h4>
+              <p class="tl-org">Accenture (On the Job Training)</p>
+              <ul>
+                <li>Trained in SAP ABAP development and SAP administration in an enterprise environment.</li>
+                <li>Worked with SAP GUI and function modules, and analyzed business scenarios to build solutions from requirements.</li>
+                <li>Presented and defended technical solutions and case studies to IT professionals.</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Education</h3>
+          <div class="tl">
+            <div class="tl-item">
+              <p class="tl-date">2022 - 2026</p>
+              <h4>BS Information Technology, Cum Laude</h4>
+              <p class="tl-org">STI College Global City</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Certifications &amp; training</h3>
+          <ul class="plain">
+            <li><b>2026</b> SAP ABAP Developer Training, Accenture</li>
+            <li><b>2024</b> Network Technology Fundamentals, STI</li>
+            <li><b>2023</b> System Administration, STI</li>
+            <li><b>2022</b> Java Fundamentals, STI</li>
+          </ul>
+          <h3>Soft skills</h3>
+          <p class="chips"><span>Organization</span><span>Time management</span><span>Attention to detail</span><span>Problem-solving</span><span>Critical thinking</span><span>Reliability</span><span>Communication</span><span>Self-management</span></p>
+          <div class="btn-row">
+            <a class="btn" href="assets/Keith_Baliza_Resume.pdf" target="_blank" rel="noopener">View in browser</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="tabs" role="tablist" aria-label="Project categories">
+        <button role="tab" class="tab active" data-cat="ai" aria-selected="true">AI Automation</button>
+        <button role="tab" class="tab" data-cat="web" aria-selected="false">Web Developer</button>
+        <button role="tab" class="tab" data-cat="va" aria-selected="false">Virtual Assistant Journey</button>
+      </div>
+
+      <div id="editBar" class="edit-bar" hidden>
+        <span>Edit mode is on. Click any title, description or tags to change them.</span>
+        <button class="btn primary" id="addBtn">+ Add from my files</button>
+        <button class="btn" id="resetBtn">Restore defaults</button>
+        <button class="btn" id="exitEdit">Done</button>
+        <input type="file" id="fileAdd" accept="video/*,image/*,.json,application/json" multiple hidden />
+        <input type="file" id="fileReplace" accept="video/*,image/*,.json,application/json" hidden />
+      </div>
+      <p id="storeWarn" class="store-warn" hidden>Your browser blocked local storage for this page, so edits won't be saved. Open the site with the Live Server extension in VS Code.</p>
+
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Let's work together</h2>
+      <p class="lead">I'm looking for virtual assistant, AI automation, and web development work. Send me a message and I'll reply fast.</p>
+      <div class="contact-grid">
+        <a class="c-card" href="mailto:keithbaliza@gmail.com"><b>Email</b><span>keithbaliza@gmail.com</span></a>
+        <a class="c-card" href="https://www.linkedin.com/in/keith-baliza-a579a427b/" target="_blank" rel="noopener"><b>LinkedIn</b><span>Keith Baliza</span></a>
+        <a class="c-card" href="https://www.facebook.com/kithkith.baliza" target="_blank" rel="noopener"><b>Facebook</b><span>Keith Baliza</span></a>
+        <div class="c-card"><b>Phone number</b><span>+63 996 426 8855</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Keith Baliza. Built by hand in Visual Studio Code.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
