@@ -27,7 +27,7 @@ window.DEFAULT_CARDS = [
       "Human in control: when the AI is not confident, the chat is routed to a human agent instead of guessing.\n\n" +
       "Result: faster, consistent replies, including outside business hours, with fewer repetitive support tasks.",
     tags: ["n8n", "Facebook", "OpenAI", "RAG", "Google Docs", "Webhooks", "HTTP Requests"],
-    media: { type: "video", src: "assets/videos/assets/videos/Facebook Page Chat Support Automation (RAG).mp4" }
+    media: { type: "video", src: "assets/videos/Facebook Page Chat Support Automation (RAG).mp4" }
   },
   {
     id: "ai-booking",
@@ -40,7 +40,7 @@ window.DEFAULT_CARDS = [
       "Records: Gmail notifications go out to the customer, and every request and its status is logged in Google Sheets.\n\n" +
       "Result: no double bookings and no repetitive scheduling work.",
     tags: ["n8n", "OpenAI", "Gmail", "Google Forms", "Google Calendar", "Google Sheets", "JavaScript"],
-    media: { type: "video", src: "assets/videos/assets/videos/Appointment Booking Automation Final.mp4" }
+    media: { type: "video", src: "assets/videos/Appointment Booking Automation Final.mp4" }
   },
   {
     id: "ai-email-triage",
@@ -53,7 +53,7 @@ window.DEFAULT_CARDS = [
       "Human in control: drafts are saved in Gmail for review, never sent automatically.\n\n" +
       "Result: a sorted inbox and faster replies, with every send still approved by a person.",
     tags: ["n8n", "OpenAI", "Gmail", "AI Agent", "JavaScript"],
-    media: { type: "video", src: "assets/videos/assets/videos/AI-Powered Email Triage & Drafting.mp4" }
+    media: { type: "video", src: "assets/videos/AI-Powered Email Triage & Drafting.mp4" }
   },
   {
     id: "web-elysium",
@@ -64,7 +64,7 @@ window.DEFAULT_CARDS = [
       "A web-deployed MMORPG with player progression, quests, inventory, combat and an in-game economy.\n\n" +
       "I built the gameplay systems in Unity and C#, used JavaScript for the web-side interactions, and stored player and game data with Supabase and NoSQL. I also explored how blockchain concepts could handle digital assets and game tokens.",
     tags: ["JavaScript", "Unity", "C#", "Supabase", "NoSQL", "Git", "Blockchain"],
-    media: { type: "video", src: "assets/videos/assets/videos/Elysium.mp4" }
+    media: { type: "video", src: "assets/videos/Elysium.mp4" }
   },
   {
     id: "web-hospital",
